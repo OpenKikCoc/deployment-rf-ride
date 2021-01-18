@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+  rf_ride_dc:
+    container_name: rf_ride
+    #command: /work/start.sh
+    #build: .
+    image: binacslee/rf-ride:latest
+    environment:
+      DISPLAY_WIDTH: "1920"
+      DISPLAY_HEIGHT: "1080"
+    volumes:
+      - ./:/work
+    ports:
+      - 10000:10000
