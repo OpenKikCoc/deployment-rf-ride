@@ -1,4 +1,4 @@
-FROM binacslee/novnc-base:baseimage
+FROM binacslee/novnc-base:baseimage-cn
 
 RUN apt-get update && \
     apt-get install -y \
